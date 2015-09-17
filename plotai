@@ -19,12 +19,12 @@ namespace ConsoleApplication2
             double y2 = y - plotis;
             double x2 = x;
             double x3 = x + ilgis;
-            double y3 = y2 - plotis;
+            double y3 = y2;
             double s = ilgis * plotis;
             double P = 2 * (ilgis + plotis);
             double d = Math.Sqrt((Math.Pow(ilgis, 2) + (Math.Pow(plotis, 2))));
-            double taskas1 = x1 / 2;
-            double taskas2 = y3 / 2;
+            double taskas1 = x1 - (ilgis/ 2);
+            double taskas2 = y3 + (plotis/ 2);
             System.Console.WriteLine("Staciakapamcio kampo a koordinates: X =" + x + " ,Y = " + y );
             System.Console.WriteLine("Staciakapamcio kampo b koordinates: X1 =" + x1 + " ,Y2 = " + y);
             System.Console.WriteLine("Staciakapamcio kampo c koordinates: X2 =" + x + " ,Y2 = " + y2);
