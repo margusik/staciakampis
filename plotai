@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x = 2;
+            double y = 5;
+            double plotis = 3;
+            double ilgis = 8;
+            double x1 = x + ilgis;
+            double y1 = y;
+            double y2 = y - plotis;
+            double x2 = x;
+            double x3 = x + ilgis;
+            double y3 = y2 - plotis;
+            double s = ilgis * plotis;
+            double P = 2 * (ilgis + plotis);
+            double d = Math.Sqrt((Math.Pow(ilgis, 2) + (Math.Pow(plotis, 2))));
+            double taskas1 = x1 / 2;
+            double taskas2 = y3 / 2;
+            System.Console.WriteLine("Staciakapamcio kampo a koordinates: X =" + x + " ,Y = " + y );
+            System.Console.WriteLine("Staciakapamcio kampo b koordinates: X1 =" + x1 + " ,Y2 = " + y);
+            System.Console.WriteLine("Staciakapamcio kampo c koordinates: X2 =" + x + " ,Y2 = " + y2);
+            System.Console.WriteLine("Staciakapamcio kampo d koordinates: X3 =" + x3 + " ,Y3 = " + y3);
+            System.Console.WriteLine("Staciakapamcio plotis S =" +s);
+            System.Console.WriteLine("Staciakapamcio perimetras P =" + P);
+            System.Console.WriteLine("Staciakapamcio istrizaines plotas d =" + d);
+            System.Console.WriteLine("Staciakapamcio susikirtimo tasko koordinates yra X =" + taskas1+ " ,Y = " + taskas2);
+            System.Console.Read();
+        }
+    }
+}
